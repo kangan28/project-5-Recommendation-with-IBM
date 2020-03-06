@@ -15017,6 +15017,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>When we look at training data, accuracy has increased to near 100% as no of latent features increases. When looking at test data, it appears like the accuracy has been plummiting as number of Features increases. This may be due to not having much variety in datasets which has really generalized data when performing on the testing set. So in this case we could do, is shuffling the data as much as possible so that we can train it on more diversified set of data.</p>
+<p>We can use A/B testing for testing how well recommendation-engine is working practically to engage users. In this, we will seperate two groups of user, one will use our recommendation-engine and other one will use some random-recommendation. We will then compare hit-rate of recommendation-articles in measuring if our recommendation-engine has boost up view count. If in case it is significant, then we can say that our recommendation engine works well.</p>
 
 </div>
 </div>
