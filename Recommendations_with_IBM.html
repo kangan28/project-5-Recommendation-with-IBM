@@ -14301,7 +14301,7 @@ The top 10 recommendations for user 20 are the following article names:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Answer: If new user is given, user will not have seen any article interaction, which could lead in failure of calculations of same vectors, since all the values in function used for that new user will be 0. Thus recommender will surely have problem in providing meaningful recommendations for new user.</p>
+<p>Answer: If new user is given, then i would like to recommend first N amount of articles having most interaction.</p>
 
 </div>
 </div>
@@ -15016,7 +15016,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>From above dataset investigation, we came across that we have users in test set are also present in the training set, which is what makes users that could be recommended using the collaborative filtering techniques. Large amount of users will suffer from the cold start problem, which forced us to use the rank based reccommendation - a method that is far less ideal. From above training graph, overfitting issues have been observed when we choose larger number of latent features, so it is better to choose small number of latent features.</p>
+<p>When we look at training data, accuracy has increased to near 100% as no of latent features increases. When looking at test data, it appears like the accuracy has been plummiting as number of Features increases. This may be due to not having much variety in datasets which has really generalized data when performing on the testing set. So in this case we could do, is shuffling the data as much as possible so that we can train it on more diversified set of data.</p>
 
 </div>
 </div>
